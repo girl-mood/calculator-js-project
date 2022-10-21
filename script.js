@@ -185,7 +185,6 @@ buttons.addEventListener('click', event => {
 })
 
 document.addEventListener('keydown', function(event){
-    console.log(event);
     let key;
     if (event.key === 'Enter'){
         key = document.querySelector('.equals');
