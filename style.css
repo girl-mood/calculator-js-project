@@ -1,0 +1,111 @@
+:root {
+    --kombu-green: #283618;
+    --dark-olive-green: #606C38;
+    --cornsilk: #FEFAE0;
+    --earth-yellow:#DDA15E;
+    --liver-dogs:#BC6C25;
+}
+
+body{
+    margin:0;
+    padding: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:32px;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    text-transform: uppercase;
+    display:flex;
+    align-self: center;
+    margin-bottom:0.5em;
+    font-size:40px;
+    line-height: 0.9em;
+    color: var(--kombu-green);
+}
+
+.cal_wrapper{
+    width:322px;
+    margin:2% auto;
+    border-radius:8px;
+    box-sizing: border-box;
+    border:1px solid #606C38;
+}
+
+.buttons_wrapper{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.cal_display{
+    width:100%;
+    min-height: 80px;
+    padding:5px 10px;
+    background-color: var(--kombu-green);
+    color: var(--cornsilk);
+    box-sizing: border-box;
+    line-height: 1.5em;
+    border-radius: 5px 5px 0 0;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button{
+    width:80px;
+    height:80px;
+    background-color: var(--earth-yellow);
+    color:var(--kombu-green);
+    text-align:center;
+    border:1px solid #606C38;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:32px;
+}
+
+button.double{
+    width: 50%;
+}
+
+button:last-child{
+    border-bottom-right-radius: 8px;
+}
+
+button:focus-visible, button:active{
+    background-color: var(--dark-olive-green);
+    color: var(--cornsilk);
+}
+
+/* .advanced{
+    background-color: var(--liver-dogs);   
+} */
+
+.operator{
+    background-color: var(--cornsilk);
+    color: var(--kombu-green);
+}
+
+button.clear{
+    flex-grow: 2;
+    background-color: var(--liver-dogs);
+}
+
+.bs{
+    border-bottom-left-radius: 8px;
+    background-color: var(--liver-dogs);
+    background-image: url('./images/backspace_icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.is_clicked{
+    background-color: var(--kombu-green);
+    color: var(--cornsilk);
+}
